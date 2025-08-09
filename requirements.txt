@@ -6,5 +6,5 @@ Flask_Migrate
 Flask_SocketIO
 eventlet
 python-dotenv
-
+Flask-Bcrypt==1.0.1
 gunicorn
