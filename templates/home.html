@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 style="text-align: center;padding-top: 40px; font-weight: bold; margin-bottom: 40px;">Welcome, {{ current_user.username }}!</h1>
+<!-- Hero Section -->
+<section>
+    <div class="firstcontainer">
+        <div class="text">
+        <h3>Your Love Story Begins Here</h3>
+        <p>Create stunning wedding invitations that capture the essence of
+            your special day. Elegant designs, heartfelt words, and everything you need to make your first impression unforgettable
+        </p>
+        <a href="{{ url_for('wedding_cards') }}" class="btn btn-warning mt-3">Get Your Style</a>
+    </div>
+    </div>
+</section>
+
+ <header class="hero-banner">
+    <div class="overlay">
+      <h1>Elegant Wedding Invitations</h1>
+      <p>Create your perfect moment with timeless designs</p>
+      <a href="#gallery" class="btn explore">Explore Collection</a>
+    </div>
+  </header>
+
+  <!-- 2. Hindu Card Gallery -->
+  <section id="gallery" class="card-gallery">
+        <h2>Unique & Exclusive Invitation Cards</h2>
+    <div class="gallerycards">
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/hindu.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/luxury.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/royal.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+   <!-- 2. Hindu Card Gallery -->
+  <section id="gallery" class="card-gallery">
+        <h2>Theme Based Invitations</h2>
+    <div class="gallerycards">
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/crist.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/birds.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/palace.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+   <!-- 2. Hindu Card Gallery -->
+  <section id="gallery" class="card-gallery">
+        <h2>Simple Affordable Invitations</h2>
+    <div class="gallerycards">
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/edit.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/one.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/thiree.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+    </div>
+       <div class="gallerycards">
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/tred.png') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/all.jpg') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+      <div class="gallerycard">
+        <img src="{{ url_for('static', filename='images/four.jpg') }}" alt="Hindu Card 1" />
+        <form action="/add-to-cart/h001" method="post">
+          <button type="submit" class="btn add-cart">Add to Cart</button>
+        </form>
+        <form action="/buy-now/h001" method="post">
+          <button type="submit" class="btn buy-now">Buy Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 4. Summer Sale Banner -->
+  <section class="summer-sale">
+    <div class="sale-overlay">
+        <div class="side">
+      <h2>Summer Sale</h2>
+      <ul style="list-style: none;font-size: 18px;">
+        <li>100 cards - 10% Off</li>
+        <li>200 cards - 15% Off</li>
+        <li>300 cards - 20% Off</li>
+        <li>400 cards - 25% Off</li>
+        <li>500 cards - 30% Off</li>
+      </ul>
+      </div>
+      <p class="stock-clearance">Stock Clearance - 40% to 60% off</p>
+      <small>* Not applicable on customized card, E-cards, and Luxury boxes</small>
+    </div>
+  </section>
+
+  <!-- 5. Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Client Say About Us</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <img src="images/client-james.png" alt="James" />
+        <h4>James</h4>
+        <p>"Elegant look, flawless printing, and top-tier paper!Elegant look, flawless printing, and top-tier paper!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <img src="images/client-harshitha.png" alt="Harshitha" />
+        <h4>Harshitha</h4>
+        <p>"Simple yet unique. Customization was perfect!Elegant look, flawless printing, and top-tier paper!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <img src="images/client-santhosh.png" alt="Santhosh" />
+        <h4>Santhosh</h4>
+        <p>"Affordable, premium feel, beautifully packaged!Elegant look, flawless printing, and top-tier paper!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}

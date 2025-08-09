@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="order-confirmed">
+    <div class="confirm">
+  <p class="order">🎉 Order Confirmed!<p> 
+  <img src="{{ url_for('static', filename='images/orderconfirmed.png') }}" class="wedding-card-image">
+  </div>
+  <p>Your card will be processed shortly. Thank you!</p>
+  <a href="{{ url_for('gallery') }}" class="btn">Back to Gallery</a>
+</div>
+{% endblock %}

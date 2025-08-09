@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="auth-container">
+  <div class="tabs">
+    <a href="#" onclick="toggleTab('login'); return false;" class="tab-link active" id="login-tab">Login</a>
+    <a href="#" onclick="toggleTab('signup'); return false;" class="tab-link" id="signup-tab">Sign Up</a>
+  </div>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+      <div class="flash {{ category }}">{{ message }}</div>
+    {% endfor %}
+  {% endwith %}
+
+  <!-- Login Form -->
+  <div id="login-form" style="display: block;">
+    <form method="POST" action="{{ url_for('login') }}">
+      {{ login_form.hidden_tag() }}
+
+      <label for="email">Email</label>
+      {{ login_form.email(class_="form-control", size=32) }}
+
+      <label for="password">Password</label>
+      {{ login_form.password(class_="form-control", size=32) }}
+
+      <button type="submit">{{ login_form.submit.label }}</button>
+    </form>
+  </div>
+
+  <!-- Signup Form -->
+  <div id="signup-form" style="display: none;">
+    <form method="POST" action="{{ url_for('register') }}">
+      {{ register_form.hidden_tag() }}
+
+      <label for="username">Username</label>
+      {{ register_form.username(class_="form-control", size=32) }}
+
+      <label for="email">Email</label>
+      {{ register_form.email(class_="form-control", size=32) }}
+
+      <label for="password">Password</label>
+      {{ register_form.password(class_="form-control", size=32) }}
+
+      <label for="confirm_password">Confirm Password</label>
+      {{ register_form.confirm_password(class_="form-control", size=32) }}
+
+      <button type="submit">{{ register_form.submit.label }}</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function toggleTab(tab) {
+  const loginForm = document.getElementById('login-form');
+  const signupForm = document.getElementById('signup-form');
+  const loginTab = document.getElementById('login-tab');
+  const signupTab = document.getElementById('signup-tab');
+
+  if (tab === 'login') {
+    loginForm.style.display = 'block';
+    signupForm.style.display = 'none';
+    loginTab.classList.add('active');
+    signupTab.classList.remove('active');
+  } else {
+    loginForm.style.display = 'none';
+    signupForm.style.display = 'block';
+    loginTab.classList.remove('active');
+    signupTab.classList.add('active');
+  }
+}
+</script>
+
+{% endblock %}

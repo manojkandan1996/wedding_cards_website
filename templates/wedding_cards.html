@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section style="background-color: #f2f2ff; padding: 40px 0;">
+    <div class="container">
+        <h2 style="text-align: center; font-weight: bold; margin-bottom: 40px;">WEDDING CARDS</h2>
+
+
+        <!-- Row 1 -->
+        <div class="card-row" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin-bottom: 40px;">
+            <div class="card-box">   
+            <a href="{{ url_for('hindu_wedding') }}" class="active" style="text-decoration: none; color: inherit;">
+                    
+                        <img src="{{ url_for('static', filename='images/hindu.png') }}" alt="Hindu Wedding Card">
+                        <p>Hindu Wedding Cards</p>
+
+                </a>
+                </div>
+                <div class="card-box">
+                    <img src="{{ url_for('static', filename='images/crist.png') }}"
+                        alt="Christian Wedding Card">
+                    <p>Christian Wedding Cards</p>
+                </div>
+                <div class="card-box">
+                    <img src="{{ url_for('static', filename='images/muslim.png') }}" alt="Muslim Wedding Card">
+                    <p>Muslim Wedding Cards</p>
+                </div>
+                <div class="card-box">
+                    <img src="{{ url_for('static', filename='images/sikh.png') }}" alt="Sikh Wedding Card">
+                    <p>Sikh Wedding Cards</p>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="card-row" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px;">
+                <div class="card-box">
+                    <img src="{{ url_for('static', filename='images/inter.jpg') }}"
+                        alt="Interfaith Wedding Card">
+                    <p>Interfaith Wedding Cards</p>
+                </div>
+                <div class="card-box">
+                    <img src="{{ url_for('static', filename='images/exclusive.png') }}"
+                        alt="Exclusive Wedding Card">
+                    <p>Exclusive Wedding Cards</p>
+                </div>
+                <div class="card-box">
+                    <img src="{{ url_for('static', filename='images/traditional.png') }}"
+                        alt="Traditional Wedding Card">
+                    <p>Traditional Wedding Cards</p>
+                </div>
+                <div class="card-box">
+                    <img src="{{ url_for('static', filename='images/all.jpg') }}" alt="All Wedding Cards">
+                    <p>All Wedding Cards</p>
+                </div>
+            </div>
+        
+
+<div class="card-row" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px;">
+    <div class="card-box">
+        <img src="{{ url_for('static', filename='images/newstyle.png') }}" alt="Interfaith Wedding Card">
+        <p>NewStyle Wedding Cards</p>
+    </div>
+    <div class="card-box">
+        <img src="{{ url_for('static', filename='images/envelope.png') }}" alt="Exclusive Wedding Card">
+        <p>Envelope Wedding Cards</p>
+    </div>
+    <div class="card-box">
+        <img src="{{ url_for('static', filename='images/elegant.png') }}" alt="Traditional Wedding Card">
+        <p>Elegant Faith Wedding Cards</p>
+    </div>
+    <div class="card-box">
+        <img src="{{ url_for('static', filename='images/nepali.png') }}" alt="All Wedding Cards">
+        <p>Nepali Wedding Cards</p>
+    </div>
+</div>
+</div>
+</section>
+
+
+
+{% endblock %}

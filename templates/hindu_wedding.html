@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 style="text-align: center;padding-top: 40px; font-weight: bold; margin-bottom: 40px;">HINDU WEDDING CARDS</h2>
+
+<div class="wedding-card-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+
+    <!-- Card 1 -->
+    <div class="wedding-card">
+         <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="The Blue Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/muslim.png') }}">
+            <input type="hidden" name="price" value="Rs. 72.25">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/muslim.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='hindu-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">The Blue Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 72.25 </p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Ganesh Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/ganesh.png') }}">
+            <input type="hidden" name="price" value="Rs. 25.25">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/ganesh.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='christian-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Ganesh Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 25.25</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Wedding Cards Favour Box">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/box.png') }}">
+            <input type="hidden" name="price" value="Rs. 39.45">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/box.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='muslim-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Wedding Cards Favour Box</p>
+                <p class="wedding-card-price">Rs. 39.45</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Theme Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/theme.png') }}">
+            <input type="hidden" name="price" value="Rs. 30.00">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/theme.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='sikh-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Theme Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 30.00</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Vintage Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/elegant.png') }}">
+            <input type="hidden" name="price" value="Rs. 30.15">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/elegant.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='interfaith-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Vintage Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 30.15</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Elegant peacock Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/peacock.png') }}">
+            <input type="hidden" name="price" value="Rs. 15">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/peacock.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='exclusive-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Elegant peacock Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 15</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Unique Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/unique.png') }}">
+            <input type="hidden" name="price" value="Rs. 22.50">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/unique.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='traditional-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Unique Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 22.50</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Wardrope Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/ward.png') }}">
+            <input type="hidden" name="price" value="Rs. 59.75">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/ward.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='all-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Wardrope Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 59.75</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Editable Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/edit.png') }}">
+            <input type="hidden" name="price" value="Rs. 35.55">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/edit.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='newstyle-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Editable Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 35.55</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Traditional Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/tred.png') }}">
+            <input type="hidden" name="price" value="Rs. 25">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/tred.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='envelope-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Traditional Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 25</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Royal Scrolling Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/royalscroll.png') }}">
+            <input type="hidden" name="price" value="Rs. 75.00">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/royalscroll.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='elegant-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Royal Scrolling Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 75.00</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="wedding-card">
+        <form method="POST" action="{{ url_for('add_to_wishlist') }}" class="wishlist-form">
+            <input type="hidden" name="card_title" value="Gate Fold Wedding Cards">
+            <input type="hidden" name="image_url" value="{{ url_for('static', filename='images/gatefold.png') }}">
+            <input type="hidden" name="price" value="Rs. 43.20">
+            <button type="submit" class="wishlist-btn">❤️</button>
+        </form>
+        <div class="wedding-card-image-container">
+            <img src="{{ url_for('static', filename='images/gatefold.png') }}" class="wedding-card-image">
+        </div>
+        <a href="{{ url_for('card_details', card_name='nepali-wedding-cards') }}" class="card-info-link">
+            <div class="wedding-card-info">
+                <p class="wedding-card-title">Gate Fold Wedding Cards</p>
+                <p class="wedding-card-price">Rs. 43.20</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+{% endblock %}

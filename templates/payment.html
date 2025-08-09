@@ -1,0 +1,11 @@
+<ul>
+  {% for item in bag_items %}
+    <li>{{ item.name }} (x{{ item.quantity }}) – ₹{{ item.price }}</li>
+  {% endfor %}
+</ul>
+
+<p>Coupon: {{ coupon_code }}</p>
+<p>Discount: ₹{{ "%.2f"|format(discount) }}</p>
+<p>Subtotal: ₹{{ "%.2f"|format(subtotal) }}</p>
+<p>Shipping: ₹{{ "%.2f"|format(shipping) }}</p>
+<h4>Total: ₹{{ "%.2f"|format(total) }}</h4>
